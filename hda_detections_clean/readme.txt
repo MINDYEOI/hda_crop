@@ -1,0 +1,3 @@
+  - “hda_detections” - Person bounding boxes coordinates in allD.txt files, with format: [camera# frame# x y w h detector_confidence] to be used by the algorithms, obtained by several methods:
+   a) GTAnnotationAll - manual annotation of all persons visible in the images (may be occluded). This is the direct translation of the contents of “hda_annotations”.
+   b) GTAnnotationsClean - Same as before but only fully visible persons are considered.
