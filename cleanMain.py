@@ -10,7 +10,7 @@ now = time.localtime()
 for camNo in camNos:
 
     annoList = annotation.getAnnoList(camNo)
-    detList = detection.getDetectList(camNo)
+    detList = detection.getCleanDetectList(camNo)
 
     detSet = set(list(map(tuple, detList)))
     detList_ = list(map(list, detSet))
@@ -25,5 +25,7 @@ for camNo in camNos:
                     seqName = "%05d" % subDetList[1]
                     cropImg = jebal.crop(
                         subDetList[0], seqName, subDetList[2:])
-                    jebal.save(cropImg, label, subDetList[0], subDetList[1])
-                    jebal.saveAll(cropImg, label, subDetList[0], subDetList[1])
+                    jebal.saveClean(
+                        cropImg, label, subDetList[0], subDetList[1])
+                    jebal.saveAllClean(
+                        cropImg, label, subDetList[0], subDetList[1])
