@@ -1,4 +1,4 @@
-hda_annotations/
-hda_detections_all/
-hda_detections_clean/
-seq2img/
+__pycache__/
+output/
+annotation_result.txt
+detection_result.txt
