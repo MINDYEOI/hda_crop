@@ -2,5 +2,7 @@ __pycache__/
 output/
 annotation_result.txt
 detection_result.txt
+
 seq2img/
 test.py
+.vscode/settings.json
