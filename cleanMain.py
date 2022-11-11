@@ -29,3 +29,5 @@ for camNo in camNos:
                         cropImg, label, subDetList[0], subDetList[1])
                     jebal.saveAllClean(
                         cropImg, label, subDetList[0], subDetList[1])
+
+                    break
