@@ -11,6 +11,12 @@ import time
 
 
 def crop(camNo, frameNo, bb):
+    """ Crop the images
+    Args:
+        camNo (int) : camera Number
+        frameNo (string) : frame Number
+        bb (list) : Bounding box information (bb = [x, y, w, h])
+    """
 
     sx = bb[0]              # start x
     dx = bb[0] + bb[2]      # destination x
