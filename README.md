@@ -62,3 +62,5 @@ hda_crop
 ## Note
 *  HDA+ dataset의 `cam02` seq 는 데이터 전처리에서 제외했습니다.
    *  GTAnnotationsAll 값에서 `cam02` 값이 없기 때문입니다.
+* The cropped image's name follows Market1501 dataset's.
+  * `id`\_c`camNo`s`seqNo`_`frameNo`_00.jpg
