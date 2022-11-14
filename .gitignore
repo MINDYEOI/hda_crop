@@ -8,3 +8,5 @@ test.py
 .vscode/settings.json
 
 dataset/
+
+.vscode
