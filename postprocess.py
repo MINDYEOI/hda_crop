@@ -4,6 +4,9 @@ import argparse
 import cv2
 import shutil
 
+
+
+
 def splitdata(dir, aim):
 
     target_dir = './dataset/'
