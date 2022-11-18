@@ -57,9 +57,6 @@ def splitdata(dir, aim):
 
     else:
 
-        if not(os.path.isdir(train_dir)):
-            os.makedirs(os.path.join(train_dir))
-
         if not(os.path.isdir(test_dir)):
             os.makedirs(os.path.join(test_dir))
 

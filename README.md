@@ -7,12 +7,15 @@ Crop HDA+ dataset~
 git clone https://github.com/MINDYEOI/hda_crop.git
 ```
 2. Move to the `hda_crop` directory.
-3. Run the `main.py` or `cleanMain.py`.
+3. If you want to split the data, run the `main.py` or `cleanMain.py`.
 ```
-python main.py # To run main.py
-python cleanMain.py # To run cleanMain.py
+python3 main.py # To run main.py
+python3 cleanMain.py # To run cleanMain.py
 ```
-
+4. If you want to split the data, run the `postprocess.py`
+```
+python3 postprocess.py -i [input directory] -a [for train, 1, or for test, 2]
+```
 
 
 ## Structure
@@ -28,6 +31,7 @@ hda_crop
 └ jebal.py
 └ main.py
 └ cleanMain.py
+└ postprocessing.py
 ```
 * hda_annotations/    
   It consists of the text files which is named `cam#<#camera>`.  
