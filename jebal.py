@@ -47,7 +47,7 @@ def save(target, label, camNo, frameNo):
     if not(os.path.isdir(dir)):
         os.makedirs(os.path.join(dir))
     
-    fileName = "0%s_c%ds1_%05d_00.jpg" % (label[-3:], camNo, frameNo)
+    fileName = "0%s_c%d_f%07d.jpg" % (label[-3:], camNo, frameNo)
 
     destination = dir + fileName
     # print(destination)
@@ -60,7 +60,7 @@ def saveAll(target, label, camNo, frameNo):
     if not(os.path.isdir(dir)):
         os.makedirs(os.path.join(dir))
     
-    fileName = "0%s_c%ds1_%05d_00.jpg" % (label[-3:], camNo, frameNo)
+    fileName = "0%s_c%d_f%07d.jpg" % (label[-3:], camNo, frameNo)
     destination = dir + fileName
     # print(destination)
     cv2.imwrite(destination, target)
@@ -81,7 +81,7 @@ def saveClean(target, label, camNo, frameNo):
     if not(os.path.isdir(dir)):
         os.makedirs(os.path.join(dir))
 
-    fileName = "0%s_c%ds1_%05d_00.jpg" % (label[-3:], camNo, frameNo)
+    fileName = "0%s_c%d_f%07d.jpg" % (label[-3:], camNo, frameNo)
     destination = dir + fileName
     # print(destination)
     cv2.imwrite(destination, target)
@@ -93,7 +93,7 @@ def saveAllClean(target, label, camNo, frameNo):
     if not(os.path.isdir(dir)):
         os.makedirs(os.path.join(dir))
 
-    fileName = "0%s_c%ds1_%05d_00.jpg" % (label[-3:], camNo, frameNo)
+    fileName = "0%s_c%d_f%07d.jpg" % (label[-3:], camNo, frameNo)
     destination = dir + fileName
     # print(destination)
     cv2.imwrite(destination, target)
