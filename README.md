@@ -12,7 +12,7 @@ git clone https://github.com/MINDYEOI/hda_crop.git
 python3 main.py # To run main.py
 python3 cleanMain.py # To run cleanMain.py
 ```
-4. If you want to split the data, run the `postprocess.py`
+4. If you want to crop the data, run the `postprocess.py`
 ```
 python3 postprocess.py -i [input directory] -a [for train, 1, or for test, 2]
 ```
